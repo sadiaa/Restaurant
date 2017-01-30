@@ -1,6 +1,7 @@
 # 3Days-Group-Project
 
 Lead developer: Ijacques 
+----
 Developers: Ion & Sadia
 
 Ijacques: Header (HTML & CSS) + Slider
