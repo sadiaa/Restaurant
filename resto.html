@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="resto.css" media="screen" title="no title">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -70,6 +71,7 @@
     </section>
     <hr>
     <footer>
+
         <div class="row">
             <div class="col-xs-12">
                 map
@@ -78,10 +80,42 @@
         <div class="row">
             <div class="col-xs-12">
                 contact
+
+        <h1>NOUS CONTACTEZ</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="footer_contact_map">
+
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21005.840522683622!2d2.4446933!3d48.84428735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1485853621162" frameborder="0" style="border:0"></iframe></div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="donnesContact">
+                        <ul>
+                          <li id="baseline"></li>
+                          <li id="adres"></li>
+                          <li id="codepostal"></li>
+                          <li id="ville"></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <form  class="footer_form">
+                        <input class="form-control my-control" type="text" name="name" placeholder="Nom">
+                        <input class="form-control my-control" type="text" name="name" placeholder="Prenom">
+                        <input class="form-control my-control" type="text" name="name" placeholder="Email">
+                        <textarea class="form-control area-control" name="name" rows="8" cols="40"></textarea>
+                        <input id="btn" type="button" name="name" value="ENVOYER">
+                    </form>
+                </div>
             </div>
-        </div>
+        </div><hr>
+        <p>
+          copyright
+        </p>
     </footer>
+
     <script src="restobouffe/resto.js"></script>
+
 </body>
 
 </html>
