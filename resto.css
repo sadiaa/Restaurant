@@ -5,31 +5,34 @@ html {
 * {
     padding: 0;
     margin: 0;
+    font-family: cursive;
 }
 
 header {
-    height: 100vh;
-    width: 100vw;
-    background: #000000;
+    height: 50vh;
+    background: #710505;
 }
 
 section {
     height: 100vh;
     width: 100vw;
-    background: lightgray;
+    background: #710505;
 }
 
-
-/*Contact fait par Moraru Ion*/
-
 footer {
-    height: 100vh;
-    width: 100vw;
+    color: #ffffff;
+    background: #710505;
     text-align: center;
 }
 
+/*Taille Des Imgs*/
+.mySlides {
+  width: 80vw;
+  height: 30vh;
+  margin-left: 10%;
+}
 
-/*propriete pour le map*/
+/*Propriete Pour La MAP*/
 footer ul  {
     list-style-type: none;
 }
@@ -45,16 +48,12 @@ footer ul  {
     border-radius: 20px;
 }
 
-
-/*propriete pour l'adresse*/
-
+/*Propriete Pour L'Adresse*/
 .donnesContact {
     padding: 5% 0 0 0;
 }
 
-
-/*propriete pour le formulaire*/
-
+/*Propriete Pour Le Formulaire*/
 .footer_form {
     margin: 5% 5% 2% 5%;
     display: flex;
@@ -80,10 +79,7 @@ footer #btn {
     padding: 5px;
     margin: 3% 0 0 35%;
 }
+
 footer>p {
     text-align: center;
-}
-
-.section_img {
-  margin-left: 20%;
 }
