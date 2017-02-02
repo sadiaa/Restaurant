@@ -13,7 +13,6 @@
 <body>
     <header>
         <div class="row">
-
             <div class="col-xs-12">
                 <nav class="navbar navbar-inverse">
                     <div class="container-fluid">
@@ -26,11 +25,22 @@
                             <li><a href="#">CONTACT</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>PANIER</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                            <li>
+                                <a href="#">
+                                    <div class="dropdown"><span class="glyphicon glyphicon-shopping-cart">
+  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">PANIER
+  <span class="caret"></li></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Nom du plat</a></li>
+                                            <li><a href="#">Prix Unitaire</a></li>
+                                            <li><a href="#">Quantité</a></li>
+                                            <li><a herf="#">Sous-total</a></li>
+                                        </ul>
+                                    </div>
+                    </ul>
             </div>
+            </nav>
+        </div>
         </div>
         <div class="section_img">
             <div class="row">
@@ -80,38 +90,40 @@
         <div class="row">
             <div class="col-xs-12">
 
-        <h1>NOUS CONTACTEZ</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="footer_contact_map">
+                <h1>NOUS CONTACTEZ</h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="footer_contact_map">
 
-                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21005.840522683622!2d2.4446933!3d48.84428735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1485853621162" frameborder="0" style="border:0"></iframe></div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="donnesContact">
-                        <ul>
-                          <li id="baseline"></li>
-                          <li id="adres"></li>
-                          <li id="codepostal"></li>
-                          <li id="ville"></li>
-                        </ul>
+                                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21005.840522683622!2d2.4446933!3d48.84428735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1485853621162" frameborder="0" style="border:0"></iframe></div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="donnesContact">
+                                <ul>
+                                    <li id="baseline"></li>
+                                    <li id="adres"></li>
+                                    <li id="codepostal"></li>
+                                    <li id="ville"></li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <form class="footer_form">
+                                <input class="form-control my-control" type="text" name="name" placeholder="Nom">
+                                <input class="form-control my-control" type="text" name="name" placeholder="Prenom">
+                                <input class="form-control my-control" type="text" name="name" placeholder="Email">
+                                <textarea class="form-control area-control" name="name" rows="8" cols="40"></textarea>
+                                <input id="btn" type="button" name="name" value="ENVOYER">
+                            </form>
+                        </div>
                     </div>
-                    <hr>
-                    <form  class="footer_form">
-                        <input class="form-control my-control" type="text" name="name" placeholder="Nom">
-                        <input class="form-control my-control" type="text" name="name" placeholder="Prenom">
-                        <input class="form-control my-control" type="text" name="name" placeholder="Email">
-                        <textarea class="form-control area-control" name="name" rows="8" cols="40"></textarea>
-                        <input id="btn" type="button" name="name" value="ENVOYER">
-                    </form>
                 </div>
-            </div>
-        </div><hr>
-        <p>
-          copyright
-        </p>
+                <hr>
+                <p>
+                    copyright
+                </p>
     </footer>
     <script src="restobouffe/resto.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,11 @@
+// base data JS //
+
+// Body //
 var contenu = {
   name: 'La bonne bouffe',
   description: 'Venez goûter nos plats préparés avec amours et bienveillance. Notre chef Gertrude viendra probablement vous serrer la main. Vous pourrez échanger avec cette passionnée de cuisine et repartir avec des conseils pour reproduire sa cuisine inimitable',
 
+// Header //
   images: [
     'https://media-cdn.tripadvisor.com/media/photo-s/02/1b/9a/bf/le-grande-bouffe.jpg',
 
@@ -12,7 +16,7 @@ var contenu = {
     'http://scrat.hellocoton.fr/img/guide/recette-ma-salade-tiede-de-chou-kale-et-lentilles-patates-douces-et-saumon-fume-18911644.jpg'
   ],
 
-
+// Footer //
   baseline: 'La promo7 vous régale',
   addresse: '51, rue de Vincennes',
   codePostale: '93100',
@@ -42,8 +46,7 @@ var contenu = {
 
 }
 
-///////////////////////
-
+// Var for slideShow //
 var slideIndex = 0;
 carousel();
 
@@ -61,39 +64,15 @@ function carousel() {
     setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
-///////////////////////
-
+// Var for img slideShow //
 var Img = document.querySelectorAll('img');
 for (var i = 0; i < Img.length; i++) {
   Img[i].src = contenu.images[i]
 }
-// var src = Img.getAttribute('src');
-// console.log(src);
-//
-// Img.setAttribute('src', contenu.images[1]);
 
-
-// var makeit = contenu.images;
-// var changing = document.getElementsByClassName('mySlides');
-//
-// makeit.forEach(function(lol){
-//   changing[0].src = makeit[0];
-//   changing[1].src = makeit[1];
-//   changing[2].src = makeit[2];
-//   changing[3].src = makeit[3];
-// })
-
-// la boucle BULDOZER
+// Var for contenu footer//
 var info = [contenu.baseline, contenu.addresse, contenu.codePostale, contenu.ville];
 var queryAll = document.querySelectorAll('footer li');
 for (var i = 0; i < queryAll.length; i++) {
   queryAll[i].innerHTML = info[i];
   };
-// var base = document.getElementById('baseline');
-// base.innerHTML = contenu.baseline;
-// var adres = document.getElementById('adres');
-// adres.innerHTML = contenu.addresse;
-// var codepostal = document.getElementById('codepostal');
-// codepostal.innerHTML = contenu.codePostale;
-// var ville = document.getElementById('ville');
-// ville.innerHTML = contenu.ville;

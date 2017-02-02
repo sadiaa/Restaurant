@@ -5,11 +5,11 @@ html {
 * {
     padding: 0;
     margin: 0;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
 header {
-    height: 50vh;
+    height: 70vh;
     background: #710505;
 }
 
@@ -25,39 +25,42 @@ footer {
     text-align: center;
 }
 
-/*Taille Des Imgs*/
+/*Taille des imgs*/
 .mySlides {
-  width: 80vw;
-  height: 30vh;
+  width: 10vw;
+  height: 45vh;
   margin-left: 10%;
+  border-radius: 20px;
 }
 
-/*Propriete Pour La MAP*/
+/*Propriete pour la MAP*/
 footer ul  {
     list-style-type: none;
 }
+
 .footer_contact_map {
     margin: 5% 5% 2% 5%;
 }
 
 #map {
-    display: block;
-    margin: 0 auto;
     width: 100%;
     height: 400px;
+    display: block;
+    margin: 0 auto;
     border-radius: 20px;
 }
 
-/*Propriete Pour L'Adresse*/
+/*Propriete pour l'adresse*/
 .donnesContact {
+    font-size: 110%;
     padding: 5% 0 0 0;
 }
 
-/*Propriete Pour Le Formulaire*/
+/*Propriete pour Le formulaire*/
 .footer_form {
-    margin: 5% 5% 2% 5%;
     display: flex;
     flex-wrap: wrap;
+    margin: 5% 5% 2% 5%;
 }
 
 footer .my-control {
@@ -74,10 +77,11 @@ footer #btn {
     width: 80px;
     height: 30px;
     border: none;
-    border-radius: 20px;
     padding: 5px;
     padding: 5px;
-    margin: 3% 0 0 35%;
+    font-size: 70%;
+    margin: 3% 0 0 45%;
+    border-radius: 10px;
 }
 
 footer>p {
