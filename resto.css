@@ -34,7 +34,27 @@ footer {
   border-radius: 20px;
 }
 
+/*Sectio du millieu*/
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.produitsCarte {
+    height: 400px;
+    width: 400px;
+    background: rgba(47, 2, 62, 0.18);
+}
+.produitsCarte img {
+    width: 80%;
+    height: 60%;
+}
+
+
+/*Propriete Pour La MAP*/
+
+
 /*Propriete pour la MAP*/
+
 footer ul  {
     list-style-type: none;
 }
