@@ -25,6 +25,7 @@ footer {
     text-align: center;
 }
 
+
 /*Taille des imgs*/
 .mySlides {
   width: 10vw;
@@ -52,7 +53,7 @@ footer ul  {
 
 /*Propriete pour l'adresse*/
 .donnesContact {
-    font-size: 110%;
+    font-size: 125%;
     padding: 5% 0 0 0;
 }
 
