@@ -26,21 +26,21 @@ var contenu = {
       name: 'Poulet aux morilles',
       image: 'http://www.epicurien.be/img/recettes-cuisines/20130928_poulet_morilles-500.jpg',
       description: 'Un grand classique le poulet de Bresse aux morilles et à la crème. Si vous ne trouvez pas de volaille de Bresse, choisissez un bon poulet fermier, élevé aux grains et qui a vécu en liberté dans les champs.',
-      price: '23 €'
+      price: 23
     },
 
     {
       name: 'Tagine aux pruneaux',
       image:'https://i1.wp.com/cotesoleils.fr/wp-content/uploads/2015/06/tajine-agneau-et-pruneaux-algc3a9rie1.jpg',
       description: 'Un des plus célèbres Tajines Marocains, servi avec une délicieuse viande de veau et des pruneaux issus de l\'agriculture biologique',
-      price: '18 €'
+      price: 18
     },
 
     {
       name: 'Salade de saison',
       image: 'http://scrat.hellocoton.fr/img/guide/recette-ma-salade-tiede-de-chou-kale-et-lentilles-patates-douces-et-saumon-fume-18911644.jpg',
       description: 'Toujours à l\'heure, la salade de saison vous régalera avec ses légumes',
-      price: '14 €'
+      price: 14
     },
   ]
 
@@ -100,9 +100,48 @@ var price = document.getElementsByClassName('price');
 for (var i = 0; i < price.length; i++) {
   price[i].innerHTML = contenu.carte[i].price;}
 
+//le bouton ajouter
+
+var produit1 = [contenu.carte[0].name, contenu.carte[0].price, 1, contenu.carte[0].price * 1]
+
+var produit2 = [contenu.carte[1].name, contenu.carte[1].price, 1]
+var produit3 = [contenu.carte[2].name, contenu.carte[2].price, 1 ]
+
+var insertTable = document.getElementById('idTBody');
+console.log(insertTable);
+
+  function btnajout(){
+    var rows = insertTable.insertRow(-1);
+    for (var i = 0; i < produit1.length; i++) {
+         var cellule = rows.insertCell(i);
+         cellule.innerHTML = produit1[i];
+      };
+ };
+ function btnajout2(){
+   var rows = insertTable.insertRow(-1);
+   for (var i = 0; i < produit1.length; i++) {
+        var cellule = rows.insertCell(i);
+        cellule.innerHTML = produit2[i];
+     };
+};
+function btnajout3(){
+  var rows = insertTable.insertRow(-1);
+  for (var i = 0; i < produit1.length; i++) {
+       var cellule = rows.insertCell(i);
+       cellule.innerHTML = produit3[i];
+    };
+};
+
+
+
+
 // Var for contenu footer//
 var info = [contenu.baseline, contenu.addresse, contenu.codePostale, contenu.ville];
 var queryAll = document.querySelectorAll('footer li');
 for (var i = 0; i < queryAll.length; i++) {
   queryAll[i].innerHTML = info[i];
   };
+
+  function myFunction() {
+      document.getElementById("myDrop").classList.toggle("show");
+  }

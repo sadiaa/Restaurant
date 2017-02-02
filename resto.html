@@ -14,8 +14,7 @@
     <header>
         <div class="row">
             <div class="col-xs-12">
-                <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="#">LA BONNE BOUFFE</a>
                         </div>
@@ -24,21 +23,22 @@
                             <li><a href="#">CARTE</a></li>
                             <li><a href="#">CONTACT</a></li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#">
-                                    <div class="dropdown"><span class="glyphicon glyphicon-shopping-cart">
-  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">PANIER
-  <span class="caret"></li></span></button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Nom du plat</a></li>
-                                            <li><a href="#">Prix Unitaire</a></li>
-                                            <li><a href="#">Quantité</a></li>
-                                            <li><a herf="#">Sous-total</a></li>
-                                        </ul>
-                                    </div>
-                    </ul>
-            </div>
+                        <div class="mydropdown">
+<input onclick="myFunction()" class="dropbtn" value="Dropdown">
+                          <table id="myDrop" class="dropcontent" >
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Prix Unitaire</th>
+                                <th>Quantité</th>
+                                <th>Sous-total</th>
+                              </tr>
+                            </thead>
+                            <tbody id="idTBody">
+                            </tbody>
+                          </table>
+                        </div>
+
             </nav>
         </div>
         </div>
@@ -67,6 +67,7 @@
     </header>
 
     <section>
+      <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <div class="produitsCarte">
@@ -80,6 +81,7 @@ ssss
                     <p class= "price">
 ssss
                     </p>
+                    <button onclick="btnajout()"  type="button" value="">Ajouter</input>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4">
@@ -94,6 +96,7 @@ ssss
                   <p class= "price">
 ssss
                   </p>
+                  <button onclick="btnajout2()"  type="button" name="button">Ajouter</button>
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
@@ -108,9 +111,12 @@ ssss
                   <p class= "price">
 ssss
                   </p>
+<button onclick="btnajout3()" type="button" name="button">Ajouter</button>
               </div>
             </div>
         </div>
+      </div>
+
     </section>
 
     <footer>
@@ -156,6 +162,7 @@ ssss
                     copyright
                 </p>
     </footer>
+
     <script src="resto.js"></script>
 </body>
 
