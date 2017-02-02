@@ -31,7 +31,15 @@ footer {
   height: 30vh;
   margin-left: 10%;
 }
-
+/*Sectio du millieu*/
+.produitsCarte {
+    height: 400px;
+    width: 400px;
+    background: rgba(47, 2, 62, 0.18);
+}
+.produitsCarte p:first-child {
+  background: red;
+}
 /*Propriete Pour La MAP*/
 footer ul  {
     list-style-type: none;

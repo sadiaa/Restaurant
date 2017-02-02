@@ -42,6 +42,7 @@ var contenu = {
 
 }
 
+
 ///////////////////////
 
 var slideIndex = 0;
@@ -63,7 +64,8 @@ function carousel() {
 
 ///////////////////////
 
-var Img = document.querySelectorAll('img');
+var Img = document.querySelectorAll('header img');
+
 for (var i = 0; i < Img.length; i++) {
   Img[i].src = contenu.images[i]
 }
