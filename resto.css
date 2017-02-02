@@ -10,18 +10,18 @@ html {
 
 header {
     height: 70vh;
-    /*background: #710505;*/
+    background: #710505;
 }
 
 section {
     height: 100vh;
     width: 100vw;
-    /*background: #710505;*/
+    background: #710505;
 }
 
 footer {
     color: #ffffff;
-    /*background: #710505;*/
+    background: #710505;
     text-align: center;
 }
 
