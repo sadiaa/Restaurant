@@ -43,7 +43,6 @@ var contenu = {
       price: '14 €'
     },
   ]
-
 }
 
 
@@ -69,9 +68,7 @@ function carousel() {
 }
 
 
-
 var Img = document.querySelectorAll('header img');
-
 
 // Var for img slideShow //
 var Img = document.querySelectorAll('img');
@@ -81,20 +78,23 @@ for (var i = 0; i < Img.length; i++) {
 }
 
 //-------------------body
+
 // le nom du plat
 var names = document.getElementsByClassName('fname');
 for (var i = 0; i < names.length; i++) {
   names[i].innerHTML = contenu.carte[i].name;
 }
+
 //les images du plat
 var imagesp = document.querySelectorAll('section  img');
 for (var i = 0; i < imagesp.length; i++) {
   imagesp[i].src = contenu.carte[i].image;
 }
-//la description
+//la description du plat
 var descriptionp = document.getElementsByClassName('description');
 for (var i = 0; i < descriptionp.length; i++) {
   descriptionp[i].innerHTML = contenu.carte[i].description;}
+
 //le prix
 var price = document.getElementsByClassName('price');
 for (var i = 0; i < price.length; i++) {
