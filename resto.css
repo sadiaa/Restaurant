@@ -10,12 +10,17 @@ html {
 
 header {
     height: 70vh;
+<<<<<<< HEAD
     /*background: 710505;*/
+=======
+    /*background: #710505;*/
+>>>>>>> b533cbc824c0c394c8b191753a5c6e61f3587398
 }
 
 section {
     height: 100vh;
     width: 100vw;
+<<<<<<< HEAD
     /*background: 710505;*/
 }
 
@@ -30,6 +35,23 @@ footer {
 .mySlides {
   width: 20vw;
   height: 55vh;
+=======
+    /*background: #710505;*/
+}
+
+footer {
+    /*color: #ffffff;*/
+    /*background: #710505;*/
+    text-align: center;
+}
+.section_img {
+    margin-top: 50px;
+}
+/*Taille des imgs*/
+.mySlides {
+  width: 10vw;
+  height: 70vh;
+>>>>>>> b533cbc824c0c394c8b191753a5c6e61f3587398
   margin-left: 10%;
   border-radius: 20px;
 }
@@ -103,4 +125,33 @@ footer #btn {
 
 footer>p {
     text-align: center;
+}
+
+table th,td {
+  border: 1px solid black;
+}
+.dropcontent {
+    display: none;
+    position: absolute;
+    background: rgb(136, 244, 221);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 50px;
+    z-index: 99;
+}
+
+.dropcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.mydropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.show {
+    display: block;
 }
