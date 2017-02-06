@@ -136,8 +136,6 @@ function btnajout3(){
 };
 
 
-
-
 // Var for contenu footer//
 var info = [contenu.baseline, contenu.addresse, contenu.codePostale, contenu.ville];
 var queryAll = document.querySelectorAll('footer li');

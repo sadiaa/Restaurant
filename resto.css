@@ -9,44 +9,17 @@ html {
 }
 
 header {
-<<<<<<< HEAD
-    height: 70vh;
-<<<<<<< HEAD
-    /*background: 710505;*/
-=======
-=======
     height: 100vh;
     width: 100vw;
->>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
-    /*background: #710505;*/
->>>>>>> b533cbc824c0c394c8b191753a5c6e61f3587398
 }
 
 section {
     height: 100vh;
     width: 100vw;
-<<<<<<< HEAD
-    /*background: 710505;*/
-}
-
-footer {
-    color: #ffffff;
-    /*background: 710505;*/
-    text-align: center;
-}
-
-
-/*Taille des imgs*/
-.mySlides {
-  width: 20vw;
-  height: 55vh;
-=======
-    /*background: #710505;*/
 }
 
 footer {
     /*color: #ffffff;*/
-    /*background: #710505;*/
     text-align: center;
 }
 
@@ -58,19 +31,11 @@ footer {
 /*Taille des imgs*/
 
 .mySlides {
-<<<<<<< HEAD
-  width: 10vw;
-  height: 70vh;
->>>>>>> b533cbc824c0c394c8b191753a5c6e61f3587398
-  margin-left: 10%;
-  border-radius: 20px;
-}
-
-/*Section du millieu*/
-=======
     width: 10vw;
     height: 60vh;
+    margin-top: 5%;
     margin-left: 10%;
+    border-radius: 5%;
 }
 
 header .descriptionrs {
@@ -96,18 +61,12 @@ header input {
 
 /*Sectio du millieu*/
 
->>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
 section {
     display: flex;
     justify-content: space-around;
 }
 
 .produitsCarte {
-<<<<<<< HEAD
-    height: 400px;
-    width: 400px;
-    /*background: rgba(47, 2, 62, 0.18);*/
-=======
     height: 480px;
     width: 350px;
     border: 1px solid rgba(68, 205, 106, 0.99);
@@ -117,7 +76,6 @@ section {
     -o-box-shadow: 0px 5px 5px 0px #656565;
     box-shadow: 0px 5px 5px 0px #656565;
     filter: progid: DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
->>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
 }
 
 .produitsCarte img {
@@ -143,17 +101,9 @@ button {
     margin: auto;
 }
 
-
-/*Propriete Pour La MAP*/
-<<<<<<< HEAD
-footer ul  {
-=======
-
-
 /*Propriete pour la MAP*/
 
 footer ul {
->>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
     list-style-type: none;
 }
 
@@ -173,7 +123,7 @@ footer ul {
 /*Propriete pour l'adresse*/
 
 .donnesContact {
-    font-size: 125%;
+    font-size: 110%;
     padding: 5% 0 0 0;
 }
 
