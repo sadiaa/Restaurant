@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="resto.css" media="screen" title="no title">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <title>LA BONNE BOUFFE</title>
 </head>
 
 <body>
-    <header>
+    <header id="accueil">
         <div class="row">
             <div class="col-xs-12">
                 <nav class="navbar navbar-inverse navbar-fixed-top">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#">LA BONNE BOUFFE</a>
-                        </div>
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">ACCUEIL</a></li>
-                            <li><a href="#">CARTE</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                        </ul>
-                        <div class="mydropdown">
-<input onclick="myFunction()" class="dropbtn" value="Dropdown">
-                          <table id="myDrop" class="dropcontent" >
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">LA BONNE BOUFFE</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#accueil">ACCUEIL</a></li>
+                        <li><a href="#carte">CARTE</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                    <div class="mydropdown">
+                        <input onclick="myFunction()" type="button" class="dropbtn" value="PANIER">
+                        <table id="myDrop" class="dropcontent">
                             <thead>
-                              <tr>
-                                <th>Name</th>
-                                <th>Prix Unitaire</th>
-                                <th>Quantité</th>
-                                <th>Sous-total</th>
-                              </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Prix Unitaire</th>
+                                    <th>Quantité</th>
+                                    <th>Sous-total</th>
+                                </tr>
                             </thead>
                             <tbody id="idTBody">
                             </tbody>
-                          </table>
-                        </div>
+                        </table>
+                    </div>
 
-            </nav>
-        </div>
+                </nav>
+            </div>
         </div>
         <div class="section_img">
             <div class="row">
@@ -61,65 +61,63 @@
                         </div>
 
                     </div>
+                    <div class="descriptionrs">
+                        <h2 id="descriptionResto"></h2>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </header >
 
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div class="produitsCarte">
-                    <h1 class="fname">
-ddddddddd
+
+
+    <section id="carte">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="produitsCarte">
+                        <h1 class="fname">
                     </h1>
-                    <img  src="" alt="" />
-                    <p class= "description">
-ssss
-                    </p>
-                    <p class= "price">
-ssss
-                    </p>
-                    <button onclick="btnajout()"  type="button" value="">Ajouter</input>
+                        <img src="" alt="" />
+                        <p class="description">
+                        </p>
+                        <p class="nom-prix">Prix: <span class="price"></span>€
+                        </p>
+                        <button onclick="btnajout()" type="button" value="">Ajouter</input>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="produitsCarte">
                   <h1 class="fname">
-ddddddddd
                   </h1>
                   <img src="" alt="" />
                   <p class= "description">
-ssss
+                  </p><br><br>
+                  <p class="nom-prix">Prix: <span class= "price"></span>€
                   </p>
-                  <p class= "price">
-ssss
-                  </p>
-                  <button onclick="btnajout2()"  type="button" name="button">Ajouter</button>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="produitsCarte">
-                  <h1 class="fname">
-ddddddddd
+                  <button onclick="btnajout2()"   type="button" name="button">Ajouter</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="produitsCarte">
+                        <h1 class="fname">
+
                   </h1>
-                  <img src="" alt="" />
-                  <p class= "description">
-ssss
-                  </p>
-                  <p class= "price">
-ssss
-                  </p>
-<button onclick="btnajout3()" type="button" name="button">Ajouter</button>
-              </div>
+                        <img src="" alt="" />
+                        <p class="description">
+                            ssss
+                        </p><br><br><br>
+                        <p class="nom-prix">Prix: <span class="price"></span>€
+                        </p>
+                        <button onclick="btnajout3()" type="button" name="button">Ajouter</button>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
 
     </section>
 
-    <footer>
+    <footer id="contact">
 
         <div class="row">
             <div class="col-xs-12">
@@ -157,11 +155,13 @@ ssss
                         </div>
                     </div>
                 </div>
+                <hr>
 
                 <p>
                     copyright
                 </p>
     </footer>
+
 
     <script src="resto.js"></script>
 </body>
