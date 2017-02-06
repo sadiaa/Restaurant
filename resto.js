@@ -47,6 +47,8 @@ var contenu = {
 
 
 ///////////////////////
+var descriere = document.getElementById('descriptionResto');
+descriere.innerHTML = contenu.description;
 
 // Var for slideShow //
 
@@ -116,6 +118,7 @@ console.log(insertTable);
          var cellule = rows.insertCell(i);
          cellule.innerHTML = produit1[i];
       };
+
  };
  function btnajout2(){
    var rows = insertTable.insertRow(-1);

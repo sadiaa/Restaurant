@@ -9,10 +9,15 @@ html {
 }
 
 header {
+<<<<<<< HEAD
     height: 70vh;
 <<<<<<< HEAD
     /*background: 710505;*/
 =======
+=======
+    height: 100vh;
+    width: 100vw;
+>>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
     /*background: #710505;*/
 >>>>>>> b533cbc824c0c394c8b191753a5c6e61f3587398
 }
@@ -44,11 +49,16 @@ footer {
     /*background: #710505;*/
     text-align: center;
 }
+
 .section_img {
     margin-top: 50px;
 }
+
+
 /*Taille des imgs*/
+
 .mySlides {
+<<<<<<< HEAD
   width: 10vw;
   height: 70vh;
 >>>>>>> b533cbc824c0c394c8b191753a5c6e61f3587398
@@ -57,23 +67,93 @@ footer {
 }
 
 /*Section du millieu*/
-section {
-  display: flex;
-  justify-content: space-around;
+=======
+    width: 10vw;
+    height: 60vh;
+    margin-left: 10%;
 }
+
+header .descriptionrs {
+    padding: 2% 10%;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+
+/*styliser le panier*/
+
+header input {
+    background: none;
+    border: none;
+    color: white;
+    margin-top: 2%;
+    margin-left: 70%;
+}
+
+
+/*Sectio du millieu*/
+
+>>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
 .produitsCarte {
+<<<<<<< HEAD
     height: 400px;
     width: 400px;
     /*background: rgba(47, 2, 62, 0.18);*/
+=======
+    height: 480px;
+    width: 350px;
+    border: 1px solid rgba(68, 205, 106, 0.99);
+    margin-top: 50px;
+    -moz-box-shadow: 0px 5px 5px 0px #656565;
+    -webkit-box-shadow: 0px 5px 5px 0px #656565;
+    -o-box-shadow: 0px 5px 5px 0px #656565;
+    box-shadow: 0px 5px 5px 0px #656565;
+    filter: progid: DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
+>>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
 }
+
 .produitsCarte img {
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 45%;
+}
+
+.produitsCarte p:nth-child(3) {
+    padding: 2% 4%;
+}
+
+.produitsCarte h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.nom-prix {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: auto;
 }
 
 
 /*Propriete Pour La MAP*/
+<<<<<<< HEAD
 footer ul  {
+=======
+
+
+/*Propriete pour la MAP*/
+
+footer ul {
+>>>>>>> a754a851a050b4fbf83076bb98e932a7535b412f
     list-style-type: none;
 }
 
@@ -89,17 +169,26 @@ footer ul  {
     border-radius: 20px;
 }
 
+
 /*Propriete pour l'adresse*/
+
 .donnesContact {
     font-size: 125%;
     padding: 5% 0 0 0;
 }
 
+
 /*Propriete pour Le formulaire*/
+
 .footer_form {
     display: flex;
     flex-wrap: wrap;
     margin: 5% 5% 2% 5%;
+}
+
+footer h1 {
+    font-family: "Lato";
+    font-size: 32px;
 }
 
 footer .my-control {
@@ -127,13 +216,24 @@ footer>p {
     text-align: center;
 }
 
-table th,td {
-  border: 1px solid black;
+
+/*style du panier*/
+
+table {
+    margin-left: 25%;
+    padding: 2%;
+    text-align: center;
 }
+
+table th, td {
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+}
+
 .dropcontent {
     display: none;
     position: absolute;
-    background: rgb(136, 244, 221);
+    background: #efefef;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     top: 50px;
@@ -145,13 +245,14 @@ table th,td {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-
 }
+
 .mydropdown {
     position: relative;
     display: flex;
     justify-content: center;
 }
+
 .show {
     display: block;
 }
